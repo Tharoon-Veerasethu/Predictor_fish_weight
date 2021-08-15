@@ -30,7 +30,7 @@ def predict():
         fishname = request.form.get('fish_name')
         
         try:
-            prediction = predictTheWeight(length1, length2, length3, height, width, fishname)
+            prediction = predictTheWeight(length1, length2, length3, height, width, fishname='bream')
             #pass prediction to template
             return render_template('index.html', prediction = prediction)
    
